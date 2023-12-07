@@ -1,0 +1,117 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "lato",sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    
+
+}
+
+
+
+.img1{
+    background-image: url(image1.png);
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img2{
+    background-image: url(image2.png);
+    min-height: 500px;
+    
+}
+.img3{
+    background-image: url(image3.png);
+    min-height: 500px;
+    
+}
+.img4{
+    background-image: url(image4.png);
+    min-height: 100%;
+    
+}
+
+.img1, .img2, .img3, .img4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* parallax effect */
+    background-attachment: fixed;
+
+}
+
+.title-box{
+    position: absolute;
+    background-color: rgb(226, 235, 128);
+    padding: 15px;
+    top: 35%; 
+    height: 30px;   
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 5px solid black;
+    border-radius: 20px;  
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    
+}
+section.first{
+    background-color: #10a599e1;
+    color: black;
+    margin-top: 100vh;
+    padding: 35px;
+}
+
+.img1, .img2, .img3, .img4{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    font-weight: 800;
+}
+.title-box:hover {
+	-webkit-animation: rotate-scale-up 0.65s linear both;
+	        animation: rotate-scale-up 0.65s linear both;
+}
+
+ @-webkit-keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
+  
+  
+  
